@@ -1,3 +1,8 @@
-const inputText = document.querySelector('input')
-
-inputText.addEventListener('blur', () => {if(inputText.value.length === 6){inputText.className = ("valid");}else{inputText.className = ("invalid")}})
+const input = document.querySelector('input')
+let inputText = new String; 
+input.addEventListener('blur', () => {
+    inputText = input.value.trim();
+    if(inputText.length === 6){
+        input.className = ("valid");
+    }
+    else{input.className = ("invalid")}})
