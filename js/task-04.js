@@ -4,5 +4,5 @@ const valueToChange = document.querySelector('#value');
 let counterValue = 0;
 
 
-plusOne.addEventListener('click', () => {counterValue+=1; valueToChange.innerText = changeValue; })
-minusOne.addEventListener('click', () => {counterValue-=1; valueToChange.innerText = changeValue; })
+plusOne.addEventListener('click', () => {counterValue+=1; valueToChange.innerText = counterValue; })
+minusOne.addEventListener('click', () => {counterValue-=1; valueToChange.innerText = counterValue; })
